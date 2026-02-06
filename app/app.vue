@@ -357,7 +357,7 @@ const handleScroll = () => {
       let newIndex = 0;
       if (scrollProgress >= 0.9) {
         newIndex = 2; // 第三组
-      } else if (scrollProgress >= 0.6) {
+      } else if (scrollProgress >= 0.55) {
         newIndex = 1; // 第二组
       } else {
         newIndex = 0; // 第一组
