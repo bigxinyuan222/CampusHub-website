@@ -110,91 +110,102 @@
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center mb-16">核心功能特性</h2>
 
-        <!-- 活动集市 -->
-        <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div class="order-2 md:order-1">
-            <h3 class="text-2xl font-bold mb-4 text-primary">活动集市</h3>
-            <p class="text-gray-700 mb-6 text-lg">
-              一站式校园活动解决方案，支持活动发布、浏览、报名、管理全流程。
-              无论是社团招新、学术讲座还是文体活动，都能轻松管理。
-            </p>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>活动分类筛选，快速找到感兴趣的内容</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>一键报名，自动生成参与凭证</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>活动发布者可实时查看报名人数和信息</span>
-              </li>
-            </ul>
-          </div>
-          <div class="order-1 md:order-2">
-            <img src="https://picsum.photos/600/400?random=1" alt="活动集市功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
-          </div>
-        </div>
+        <!-- 核心功能特性容器 -->
+        <div id="features-container" class="features-container">
+          <!-- 视口固定区域 -->
+          <div class="features-viewport">
+            <!-- 活动集市 -->
+            <div class="feature-card grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center" 
+                 :class="{ 'active': currentCardIndex === 0 }">
+              <div>
+                <img src="https://picsum.photos/600/400?random=1" alt="活动集市功能展示"
+                  class="rounded-card shadow-xl w-full hover-scale">
+              </div>
+              <div>
+                <h3 class="text-4xl font-bold mb-4 text-primary">活动集市</h3>
+                <p class="text-gray-700 mb-6 text-2xl">
+                  一站式校园活动解决方案，支持活动发布、浏览、报名、管理全流程。
+                  无论是社团招新、学术讲座还是文体活动，都能轻松管理。
+                </p>
+                <ul class="space-y-3 text-gray-700 text-lg">
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>活动分类筛选，快速找到感兴趣的内容</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>一键报名，自动生成参与凭证</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>活动发布者可实时查看报名人数和信息</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-        <!-- 即时互动 -->
-        <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
-            <img src="https://picsum.photos/600/400?random=2" alt="即时互动功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold mb-4 text-primary">即时互动</h3>
-            <p class="text-gray-700 mb-6 text-lg">
-              校园专属即时通讯系统，支持私聊、群聊和系统通知，
-              让校园沟通更高效、更安全。
-            </p>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>校园内部点对点聊天，信息安全有保障</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>系统通知实时推送，重要信息不遗漏</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>消息已读状态，沟通更透明</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+            <!-- 即时互动 -->
+            <div class="feature-card grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center" 
+                 :class="{ 'active': currentCardIndex === 1 }">
+              <div>
+                <img src="https://picsum.photos/600/400?random=2" alt="即时互动功能展示"
+                  class="rounded-card shadow-xl w-full hover-scale">
+              </div>
+              <div>
+                <h3 class="text-4xl font-bold mb-4 text-primary">即时互动</h3>
+                <p class="text-gray-700 mb-6 text-2xl">
+                  校园专属即时通讯系统，支持私聊、群聊和系统通知，
+                  让校园沟通更高效、更安全。
+                </p>
+                <ul class="space-y-3 text-gray-700 text-lg">
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>校园内部点对点聊天，信息安全有保障</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>系统通知实时推送，重要信息不遗漏</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>消息已读状态，沟通更透明</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-        <!-- 个人管家 -->
-        <div class="feature-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div class="order-2 md:order-1">
-            <h3 class="text-2xl font-bold mb-4 text-primary">个人管家</h3>
-            <p class="text-gray-700 mb-6 text-lg">
-              全方位个人中心，管理你的校园生活，
-              包括活动历史、待办提醒、实名认证等功能。
-            </p>
-            <ul class="space-y-2 text-gray-700">
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>活动参与历史，一键查看过往记录</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>待办事项提醒，重要事情不忘记</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>学生实名认证，保障校园信息安全</span>
-              </li>
-            </ul>
+            <!-- 个人管家 -->
+            <div class="feature-card grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center" 
+                 :class="{ 'active': currentCardIndex === 2 }">
+              <div>
+                <img src="https://picsum.photos/600/400?random=3" alt="个人管家功能展示"
+                  class="rounded-card shadow-xl w-full hover-scale">
+              </div>
+              <div>
+                <h3 class="text-4xl font-bold mb-4 text-primary">个人管家</h3>
+                <p class="text-gray-700 mb-6 text-2xl">
+                  全方位个人中心，管理你的校园生活，
+                  包括活动历史、待办提醒、实名认证等功能。
+                </p>
+                <ul class="space-y-3 text-gray-700 text-lg">
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>活动参与历史，一键查看过往记录</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>待办事项提醒，重要事情不忘记</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <i class="fa fa-check-circle text-primary mt-1"></i>
+                    <span>学生实名认证，保障校园信息安全</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="order-1 md:order-2">
-            <img src="https://picsum.photos/600/400?random=3" alt="个人管家功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
-          </div>
+          <!-- 滚动触发区域 -->
+          <div class="scroll-trigger"></div>
         </div>
 
         <!-- 技术优势 -->
@@ -304,6 +315,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 // 状态管理
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
+const currentCardIndex = ref(0);
 
 // 菜单切换
 const toggleMenu = () => {
@@ -317,6 +329,46 @@ const closeMenu = () => {
 // 滚动监听
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
+
+  // 处理核心功能特性的滚动固定和切换
+  const featuresSection = document.getElementById('features');
+  const featuresContainer = document.getElementById('features-container');
+  const featureCards = document.querySelectorAll('.feature-card');
+  
+  if (featuresSection && featuresContainer && featureCards.length > 0) {
+    // const featuresTop = featuresSection.offsetTop;
+    // const featuresHeight = featuresSection.offsetHeight;
+    // const containerHeight = featuresContainer.offsetHeight;
+    // const cardHeight = featureCards[0].offsetHeight;
+    
+    const scrollY = window.scrollY;
+    
+    // 获取滚动触发区域的位置和高度
+    const scrollTrigger = document.querySelector('.scroll-trigger');
+    if (scrollTrigger) {
+      const triggerTop = scrollTrigger.offsetTop;
+      const triggerHeight = scrollTrigger.offsetHeight;
+      
+      // 计算滚动进度（0-1之间）
+      const scrollProgress = Math.max(0, Math.min(1, (scrollY - triggerTop) / triggerHeight));
+      
+      // 根据滚动进度计算当前应该显示的卡片索引
+      // 滚动1/3切第二组、2/3切第三组
+      let newIndex = 0;
+      if (scrollProgress >= 0.9) {
+        newIndex = 2; // 第三组
+      } else if (scrollProgress >= 0.6) {
+        newIndex = 1; // 第二组
+      } else {
+        newIndex = 0; // 第一组
+      }
+      
+      // 更新当前卡片索引
+      if (newIndex !== currentCardIndex.value) {
+        currentCardIndex.value = newIndex;
+      }
+    }
+  }
 };
 
 // 生命周期钩子
@@ -341,3 +393,43 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 </script>
+
+<style scoped>
+.features-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.features-viewport {
+  position: sticky;
+  top: 100px;
+  z-index: 40;
+  min-height: 610px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  /* overflow: hidden; */
+}
+
+.scroll-trigger {
+  height: 300vh; /* 提供3倍视口高度的滚动空间 */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.feature-card {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.feature-card.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+</style>
