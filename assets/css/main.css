@@ -47,49 +47,8 @@ body {
   .hero-image {
     width: 80% !important;
   }
+<<<<<<< HEAD
 }
-
-/* 核心功能特性滚动效果 */
-.feature-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+=======
 }
-
-@media (min-width: 768px) {
-  .feature-section {
-    flex-direction: row;
-  }
-}
-
-.feature-images {
-  position: relative;
-  height: 400px;
-}
-
-.feature-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.feature-image-container.active {
-  opacity: 1;
-  visibility: visible;
-  position: relative;
-}
-
-.feature-content {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.feature-content.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+>>>>>>> b50a3f119d19bf88ec7229da0eb6e7bf2180dc39
