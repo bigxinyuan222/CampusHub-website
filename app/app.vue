@@ -287,7 +287,7 @@
               </li>
               <li class="flex items-center gap-2">
                 <i class="fa fa-github"></i>
-                <span>github.com/CampusHub</span>
+                <span>github.com/CampusHub_frontend</span>
               </li>
             </ul>
           </div>
@@ -301,7 +301,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+
 
 // 状态管理
 const isMenuOpen = ref(false);
