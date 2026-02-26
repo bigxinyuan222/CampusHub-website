@@ -48,8 +48,9 @@
           </div>
         </div>
         <div class="md:w-1/2 flex justify-center">
-          <img src="https://picsum.photos/800/600" alt="CampusHub 双端展示"
-            class="hero-image rounded-2xl shadow-2xl hover-scale w-full max-w-md">
+          <div class="hero-image">
+            <i class="iconfont iconfont-a-shapequickpressedtrue hero-icon"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -116,11 +117,11 @@
           <div class="features-image-container md:w-[3fr]">
             <div class="feature-image sticky top-[100px]">
               <div class="image-wrapper">
-                <img src="https://picsum.photos/600/400?random=1" alt="活动集市功能展示"
+                <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/aeb21b54-ef52-4246-b3c6-889736f23d5f.png" alt="活动集市功能展示"
                   class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 0 }">
-                <img src="https://picsum.photos/600/400?random=2" alt="即时互动功能展示"
+                <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/d963783d-aebb-49e0-aea8-9a74f792374f.png" alt="即时互动功能展示"
                   class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 1 }">
-                <img src="https://picsum.photos/600/400?random=3" alt="个人管家功能展示"
+                <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/053c1a0c-3e18-4b6e-9b03-a2d0e595e7b5.jpg" alt="个人管家功能展示"
                   class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 2 }">
               </div>
             </div>
@@ -169,7 +170,7 @@
                 </li>
                 <li class="flex items-start gap-2">
                   <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>消息已读状态，沟通更透明</span>
+                  <span>消息实时显示，沟通更透明</span>
                 </li>
               </ul>
             </div>
@@ -221,7 +222,7 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-users text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">社团招新</h3>
+            <h3 class="text-xl font-semibold mb-3">社团活动</h3>
             <p class="text-gray-700">
               社团发布招新活动，学生扫码即可报名，
               自动收集报名信息，无需人工登记，
@@ -234,11 +235,11 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-shopping-bag text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">跳蚤市场</h3>
+            <h3 class="text-xl font-semibold mb-3">招聘就业</h3>
             <p class="text-gray-700">
-              发布二手物品信息，感兴趣的同学可即时沟通，
-              安全的校园内部交易环境，
-              让闲置物品发挥最大价值。
+              校企合作招聘信息发布，实习就业机会一键获取，
+              简历投递与面试通知实时推送，
+              助力学子实现职业理想。
             </p>
           </div>
 
@@ -247,11 +248,11 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-graduation-cap text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">校园服务查询</h3>
+            <h3 class="text-xl font-semibold mb-3">学术讲座</h3>
             <p class="text-gray-700">
-              集成校园各类服务入口，
-              成绩查询、课表查看、校园卡充值等，
-              一站式解决校园生活需求。
+              汇聚学术前沿动态，名家讲座一键报名，
+              线上线下同步参与，讲座资料随时回顾，
+              激发学术兴趣，拓展知识视野。
             </p>
           </div>
         </div>
@@ -283,11 +284,11 @@
             <ul class="space-y-2 text-gray-400">
               <li class="flex items-center gap-2">
                 <i class="fa fa-envelope"></i>
-                <span>contact@campushub.edu</span>
+                <span>1551681944@qq.com</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fa fa-github"></i>
-                <span>github.com/CampusHub_frontend</span>
+               <a href="https://github.com/Fly-Xu-cmd/CampusHub_frontend" target="_blank">CampusHub_frontend</a>
               </li>
             </ul>
           </div>
@@ -301,7 +302,7 @@
 </template>
 
 <script setup lang="ts">
-
+import { ref, onMounted, onUnmounted } from 'vue';
 
 // 状态管理
 const isMenuOpen = ref(false);
@@ -455,5 +456,33 @@ onUnmounted(() => {
     min-height: auto;
     padding: 40px 0;
   }
+}
+
+/* Hero image styles */
+.hero-image {
+  width: 80%;
+  max-width: 24rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #FF7A00;
+  border-radius: 32px;
+  box-shadow: 0 10px 25px rgba(255, 122, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero-image:hover {
+  box-shadow: 0 15px 35px rgba(255, 122, 0, 0.7);
+  transform: scale(1.05);
+}
+
+.hero-image .hero-icon {
+  font-size: clamp(60px, 40vw, 200px);
+  width: 100%;
+  text-align: center;
+  color: #ffffffeb;
+  text-shadow: 25px 22px 12px rgba(250, 248, 248, 0.526);
 }
 </style>
