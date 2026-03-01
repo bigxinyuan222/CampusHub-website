@@ -135,7 +135,7 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/aeb21b54-ef52-4246-b3c6-889736f23d5f.png" alt="活动集市功能展示"
+            <img src="public\images\2be5f27a6742dd2cd8b043d6a253e957.jpg" alt="活动集市功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
@@ -143,7 +143,7 @@
         <!-- 即时互动 -->
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/d963783d-aebb-49e0-aea8-9a74f792374f.png" alt="即时互动功能展示"
+            <img src="public\images\81e4e8bf36d5438e93ba0ff1636709bf.png" alt="即时互动功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
           <div>
@@ -172,7 +172,7 @@
         <!-- 个人管家 -->
         <div class="feature-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div class="order-2 md:order-1">
-            <h3 class="text-2xl font-bold mb-4 text-primary">个人管家</h3>
+            <h3 class="text-2xl font-bold mb-4 text-primary">个性中心</h3>
             <p class="text-gray-700 mb-6 text-lg">
               全方位个人中心，管理你的校园生活，
               包括活动历史、待办提醒、实名认证等功能。
@@ -184,7 +184,7 @@
               </li>
               <li class="flex items-start gap-2">
                 <i class="fa fa-check-circle text-primary mt-1"></i>
-                <span>待办事项提醒，重要事情不忘记</span>
+                <span>独特标签选择，自定义个人兴趣</span>
               </li>
               <li class="flex items-start gap-2">
                 <i class="fa fa-check-circle text-primary mt-1"></i>
@@ -193,7 +193,7 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/053c1a0c-3e18-4b6e-9b03-a2d0e595e7b5.jpg" alt="个人管家功能展示"
+            <img src="public\images\776140f31baa4fad8584bb05a87e1f7f.png" alt="个人管家功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
