@@ -332,7 +332,6 @@ onUnmounted(() => {
 
 <style scoped>
 
-
 /* Hero image styles */
 .hero-image {
   width: 80%;
