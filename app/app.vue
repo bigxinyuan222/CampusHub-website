@@ -135,7 +135,7 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="public/images/2be5f27a6742dd2cd8b043d6a253e957.jpg" alt="活动集市功能展示"
+            <img src="images/2be5f27a6742dd2cd8b043d6a253e957.jpg" alt="活动集市功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
@@ -143,7 +143,7 @@
         <!-- 即时互动 -->
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="public/images/81e4e8bf36d5438e93ba0ff1636709bf.png" alt="即时互动功能展示"
+            <img src="images/81e4e8bf36d5438e93ba0ff1636709bf.png" alt="即时互动功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
           <div>
@@ -193,7 +193,7 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="public/images/776140f31baa4fad8584bb05a87e1f7f.png" alt="个人管家功能展示"
+            <img src="images/776140f31baa4fad8584bb05a87e1f7f.png" alt="个人管家功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
