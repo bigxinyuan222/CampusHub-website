@@ -17,7 +17,12 @@ export default defineNuxtConfig({
         // Favicon
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
-    }
+    },
+    baseURL: '/CampusHub-website/' // 您的仓库名
   },
-  css: ['../assets/css/main.css'],
+  nitro: {
+    preset: 'static'
+  },
+  css: ['../assets/css/main.css', '../assets/css/iconfont.css'],
+
 })

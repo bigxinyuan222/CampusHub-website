@@ -48,8 +48,9 @@
           </div>
         </div>
         <div class="md:w-1/2 flex justify-center">
-          <img src="https://picsum.photos/800/600" alt="CampusHub 双端展示"
-            class="hero-image rounded-2xl shadow-2xl hover-scale w-full max-w-md">
+          <div class="hero-image">
+            <i class="iconfont iconfont-a-shapequickpressedtrue hero-icon"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -110,92 +111,90 @@
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-center mb-16">核心功能特性</h2>
 
-        <!-- 核心功能特性容器 -->
-        <div class="features-container">
-          <!-- 图片固定区域 -->
-          <div class="features-image-container md:w-[3fr]">
-            <div class="feature-image sticky top-[100px]">
-              <div class="image-wrapper">
-                <img src="https://picsum.photos/600/400?random=1" alt="活动集市功能展示"
-                  class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 0 }">
-                <img src="https://picsum.photos/600/400?random=2" alt="即时互动功能展示"
-                  class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 1 }">
-                <img src="https://picsum.photos/600/400?random=3" alt="个人管家功能展示"
-                  class="rounded-card shadow-xl w-full hover-scale" :class="{ 'active': currentFeatureIndex === 2 }">
-              </div>
-            </div>
+        <!-- 活动集市 -->
+        <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-bold mb-4 text-primary">活动集市</h3>
+            <p class="text-gray-700 mb-6 text-lg">
+              一站式校园活动解决方案，支持活动发布、浏览、报名、管理全流程。
+              无论是社团招新、学术讲座还是文体活动，都能轻松管理。
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>活动分类筛选，快速找到感兴趣的内容</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>一键报名，自动生成参与凭证</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>活动发布者可实时查看报名人数和信息</span>
+              </li>
+            </ul>
           </div>
-          
-          <!-- 内容滚动区域 -->
-          <div class="features-content-container md:w-[2fr]">
-            <!-- 活动集市 -->
-            <div class="feature-content-item" :class="{ 'active': currentFeatureIndex === 0 }" ref="featureItem0">
-              <h3 class="text-4xl font-bold mb-4 text-primary">活动集市</h3>
-              <p class="text-gray-700 mb-6 text-2xl">
-                一站式校园活动解决方案，支持活动发布、浏览、报名、管理全流程。
-                无论是社团招新、学术讲座还是文体活动，都能轻松管理。
-              </p>
-              <ul class="space-y-3 text-gray-700 text-lg">
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>活动分类筛选，快速找到感兴趣的内容</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>一键报名，自动生成参与凭证</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>活动发布者可实时查看报名人数和信息</span>
-                </li>
-              </ul>
-            </div>
+          <div class="order-1 md:order-2">
+            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/aeb21b54-ef52-4246-b3c6-889736f23d5f.png" alt="活动集市功能展示"
+              class="rounded-card shadow-xl w-full hover-scale">
+          </div>
+        </div>
 
-            <!-- 即时互动 -->
-            <div class="feature-content-item" :class="{ 'active': currentFeatureIndex === 1 }" ref="featureItem1">
-              <h3 class="text-4xl font-bold mb-4 text-primary">即时互动</h3>
-              <p class="text-gray-700 mb-6 text-2xl">
-                校园专属即时通讯系统，支持私聊、群聊和系统通知，
-                让校园沟通更高效、更安全。
-              </p>
-              <ul class="space-y-3 text-gray-700 text-lg">
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>校园内部点对点聊天，信息安全有保障</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>系统通知实时推送，重要信息不遗漏</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>消息已读状态，沟通更透明</span>
-                </li>
-              </ul>
-            </div>
+        <!-- 即时互动 -->
+        <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/d963783d-aebb-49e0-aea8-9a74f792374f.png" alt="即时互动功能展示"
+              class="rounded-card shadow-xl w-full hover-scale">
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 text-primary">即时互动</h3>
+            <p class="text-gray-700 mb-6 text-lg">
+              校园专属即时通讯系统，支持私聊、群聊和系统通知，
+              让校园沟通更高效、更安全。
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>校园内部点对点聊天，信息安全有保障</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>系统通知实时推送，重要信息不遗漏</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>消息实时显示，沟通更透明</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <!-- 个人管家 -->
-            <div class="feature-content-item" :class="{ 'active': currentFeatureIndex === 2 }" ref="featureItem2">
-              <h3 class="text-4xl font-bold mb-4 text-primary">个人管家</h3>
-              <p class="text-gray-700 mb-6 text-2xl">
-                全方位个人中心，管理你的校园生活，
-                包括活动历史、待办提醒、实名认证等功能。
-              </p>
-              <ul class="space-y-3 text-gray-700 text-lg">
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>活动参与历史，一键查看过往记录</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>待办事项提醒，重要事情不忘记</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fa fa-check-circle text-primary mt-1"></i>
-                  <span>学生实名认证，保障校园信息安全</span>
-                </li>
-              </ul>
-            </div>
+        <!-- 个人管家 -->
+        <div class="feature-card grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-bold mb-4 text-primary">个人管家</h3>
+            <p class="text-gray-700 mb-6 text-lg">
+              全方位个人中心，管理你的校园生活，
+              包括活动历史、待办提醒、实名认证等功能。
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>活动参与历史，一键查看过往记录</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>待办事项提醒，重要事情不忘记</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa fa-check-circle text-primary mt-1"></i>
+                <span>学生实名认证，保障校园信息安全</span>
+              </li>
+            </ul>
+          </div>
+          <div class="order-1 md:order-2">
+            <img src="http://t9ymlyi4e.hn-bkt.clouddn.com/053c1a0c-3e18-4b6e-9b03-a2d0e595e7b5.jpg" alt="个人管家功能展示"
+              class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
 
@@ -221,7 +220,7 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-users text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">社团招新</h3>
+            <h3 class="text-xl font-semibold mb-3">社团活动</h3>
             <p class="text-gray-700">
               社团发布招新活动，学生扫码即可报名，
               自动收集报名信息，无需人工登记，
@@ -234,11 +233,11 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-shopping-bag text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">跳蚤市场</h3>
+            <h3 class="text-xl font-semibold mb-3">招聘就业</h3>
             <p class="text-gray-700">
-              发布二手物品信息，感兴趣的同学可即时沟通，
-              安全的校园内部交易环境，
-              让闲置物品发挥最大价值。
+              校企合作招聘信息发布，实习就业机会一键获取，
+              简历投递与面试通知实时推送，
+              助力学子实现职业理想。
             </p>
           </div>
 
@@ -247,11 +246,11 @@
             <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
               <i class="fa fa-graduation-cap text-primary text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">校园服务查询</h3>
+            <h3 class="text-xl font-semibold mb-3">学术讲座</h3>
             <p class="text-gray-700">
-              集成校园各类服务入口，
-              成绩查询、课表查看、校园卡充值等，
-              一站式解决校园生活需求。
+              汇聚学术前沿动态，名家讲座一键报名，
+              线上线下同步参与，讲座资料随时回顾，
+              激发学术兴趣，拓展知识视野。
             </p>
           </div>
         </div>
@@ -283,11 +282,11 @@
             <ul class="space-y-2 text-gray-400">
               <li class="flex items-center gap-2">
                 <i class="fa fa-envelope"></i>
-                <span>contact@campushub.edu</span>
+                <span>1551681944@qq.com</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fa fa-github"></i>
-                <span>github.com/CampusHub_frontend</span>
+               <a href="https://github.com/Fly-Xu-cmd/CampusHub_frontend" target="_blank">CampusHub_frontend</a>
               </li>
             </ul>
           </div>
@@ -301,13 +300,11 @@
 </template>
 
 <script setup lang="ts">
-
+import { ref, onMounted, onUnmounted } from 'vue';
 
 // 状态管理
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
-const currentFeatureIndex = ref(0);
-const scrollThreshold = 100; // 滚动阈值
 
 // 菜单切换
 const toggleMenu = () => {
@@ -321,51 +318,11 @@ const closeMenu = () => {
 // 滚动监听
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
-
-  // 处理垂直轮播效果
-  const featureItems = document.querySelectorAll('.feature-content-item');
-  const featuresSection = document.getElementById('features');
-  
-  if (featuresSection && featureItems.length > 0) {
-    const sectionRect = featuresSection.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    
-    // 当进入功能特性区域时才开始处理轮播
-    if (sectionRect.top <= windowHeight && sectionRect.bottom >= 0) {
-      // 计算当前应该显示的索引
-      let newIndex = currentFeatureIndex.value;
-      
-      featureItems.forEach((item, index) => {
-        const rect = item.getBoundingClientRect();
-        
-        // 当内容项进入视口中心附近时，更新当前索引
-        if (rect.top <= windowHeight / 2 + scrollThreshold && rect.bottom >= windowHeight / 2 - scrollThreshold) {
-          newIndex = index;
-        }
-      });
-      
-      // 确保索引变化的连续性
-      if (newIndex !== currentFeatureIndex.value) {
-        currentFeatureIndex.value = newIndex;
-      }
-    } else if (sectionRect.bottom < 0) {
-      // 当滚动到区域底部时，确保显示最后一个内容
-      currentFeatureIndex.value = featureItems.length - 1;
-    } else if (sectionRect.top > windowHeight) {
-      // 当滚动到区域顶部时，确保显示第一个内容
-      currentFeatureIndex.value = 0;
-    }
-  }
 };
 
 // 生命周期钩子
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
-  
-  // 初始化第一个项目为激活状态
-  setTimeout(() => {
-    currentFeatureIndex.value = 0;
-  }, 100);
 });
 
 onUnmounted(() => {
@@ -374,86 +331,47 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.features-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+
+/* Hero image styles */
+.hero-image {
+  width: 80%;
+  max-width: 24rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #FF7A00;
+  border-radius: 32px;
+  box-shadow: 0 10px 25px rgba(255, 122, 0, 0.5);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .features-container {
-    grid-template-columns: 3fr 2fr;
+/* 确保在移动端也保持正方形 */
+@media (max-width: 640px) {
+  .hero-image {
+    aspect-ratio: 1/1 !important;
   }
 }
 
-.features-image-container {
-  position: relative;
+.hero-image:hover {
+  box-shadow: 0 15px 35px rgba(255, 122, 0, 0.7);
+  transform: scale(1.05);
 }
 
-.feature-image {
-  position: sticky;
-  top: 100px;
-  z-index: 10;
-}
-
-.image-wrapper {
-  position: relative;
+.hero-image .hero-icon {
+  font-size: clamp(60px, 40vw, 200px);
   width: 100%;
-  height: 0;
-  padding-bottom: 66.67%; /* 3:2 aspect ratio */
+  text-align: center;
+  color: #ffffffeb;
+  text-shadow: 25px 22px 12px rgba(250, 248, 248, 0.526);
 }
 
-.image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-in-out;
-  z-index: 1;
-}
-
-.image-wrapper img.active {
-  opacity: 1;
-  transform: translateY(0);
-  z-index: 2;
-}
-
-.features-content-container {
-  position: relative;
-}
-
-.feature-content-item {
-  min-height: 100vh;
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
-  opacity: 0.3;
-  transform: translateY(50px);
-  transition: all 0.8s ease-in-out;
-}
-
-/* 当内容项在视口中时的样式 */
-.feature-content-item.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 确保最后一个内容项也能与图片顶部对齐 */
-.feature-content-item:last-child {
-  min-height: 100vh;
-  padding-bottom: 40px;
-}
-
-/* 响应式调整 */
-@media (max-width: 767px) {
-  .feature-content-item {
-    min-height: auto;
-    padding: 40px 0;
+/* 在移动端将图标向左移动 */
+@media (max-width: 640px) {
+  .hero-image .hero-icon {
+    transform: translateX(-19px);
   }
 }
 </style>
