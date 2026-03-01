@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  ssr: true,
   app: {
     head: {
       title: 'CampusHub - 开启智慧校园新生活',
