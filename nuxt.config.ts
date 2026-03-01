@@ -3,7 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  ssr: true,
   app: {
+    baseURL: '/CampusHub-website/'，
     head: {
       title: 'CampusHub - 开启智慧校园新生活',
       meta: [
@@ -18,6 +20,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
+  },
+  nitro: {
+    preset: 'static'
   },
   css: ['../assets/css/main.css'],
 })
