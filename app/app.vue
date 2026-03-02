@@ -136,8 +136,8 @@
           </div>
           <div class="order-1 md:order-2">
             <div class="relative rounded-card shadow-xl w-full hover-scale">
-              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
-                <i class="iconfont iconfont-morentupian w-full h-full flex items-center justify-center text-[100px]"></i>
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+                <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
                 class="w-full"
@@ -150,8 +150,8 @@
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <div class="relative rounded-card shadow-xl w-full hover-scale">
-              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
-                <i class="iconfont iconfont-morentupian w-full h-full flex items-center justify-center text-[100px]"></i>
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+                <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/未标题-1.png" alt="即时互动功能展示"
                 class="w-full"
@@ -205,10 +205,14 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <div class="video-container w-[80%] h-[650px] mx-auto max-w-md flex items-center justify-center">
+            <div class="video-container w-[80%] h-[650px] mx-auto max-w-md flex items-center justify-center relative">
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+                <i class="iconfont iconfont-morentupian"></i>
+              </div>
               <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
                 class="rounded-card shadow-xl w-[100%] h-[95%] mx-auto my-auto object-contain hover-scale"
-                autoplay loop muted playsinline>
+                autoplay loop muted playsinline
+                onloadeddata="this.previousElementSibling.style.display='none'">
               </video>
             </div>
           </div>
