@@ -193,10 +193,12 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
-              class="rounded-card shadow-xl w-full hover-scale"
-              autoplay loop muted playsinline>
-            </video>
+            <div class="video-container w-[80%] h-[650px] mx-auto max-w-md flex items-center justify-center">
+              <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
+                class="rounded-card shadow-xl w-[100%] h-[95%] mx-auto my-auto object-contain hover-scale"
+                autoplay loop muted playsinline>
+              </video>
+            </div>
           </div>
         </div>
 
