@@ -193,8 +193,10 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="/images/776140f31baa4fad8584bb05a87e1f7f.png" alt="个人管家功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
+            <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
+              class="rounded-card shadow-xl w-full hover-scale"
+              autoplay loop muted playsinline>
+            </video>
           </div>
         </div>
 
