@@ -135,16 +135,28 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
+            <div class="relative rounded-card shadow-xl w-full hover-scale">
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
+                <i class="iconfont iconfont-morentupian w-full h-full flex items-center justify-center text-[100px]"></i>
+              </div>
+              <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
+                class="w-full"
+                onload="this.previousElementSibling.style.display='none'">
+            </div>
           </div>
         </div>
 
         <!-- 即时互动 -->
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="/images/702597242f8b4e0d91a797eca31447ec.png" alt="即时互动功能展示"
-              class="rounded-card shadow-xl w-full hover-scale">
+            <div class="relative rounded-card shadow-xl w-full hover-scale">
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
+                <i class="iconfont iconfont-morentupian w-full h-full flex items-center justify-center text-[100px]"></i>
+              </div>
+              <img src="/images/未标题-1.png" alt="即时互动功能展示"
+                class="w-full"
+                onload="this.previousElementSibling.style.display='none'">
+            </div>
           </div>
           <div>
             <h3 class="text-2xl font-bold mb-4 text-primary">即时互动</h3>
@@ -309,6 +321,8 @@ import { ref, onMounted, onUnmounted } from 'vue';
 // 状态管理
 const isMenuOpen = ref(false);
 const isScrolled = ref(false);
+const imageLoaded1 = ref(false);
+const imageLoaded2 = ref(false);
 
 // 菜单切换
 const toggleMenu = () => {
@@ -335,6 +349,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+@import url('//at.alicdn.com/t/c/font_5119551_rn0mdwkntat.css');
 
 /* Hero image styles */
 .hero-image {
