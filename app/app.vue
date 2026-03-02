@@ -135,7 +135,7 @@
             </ul>
           </div>
           <div class="order-1 md:order-2">
-            <img src="/images/d9557fca432358245af69480914cbccf.png" alt="活动集市功能展示"
+            <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
         </div>
@@ -143,7 +143,7 @@
         <!-- 即时互动 -->
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="/images/81e4e8bf36d5438e93ba0ff1636709bf.png" alt="即时互动功能展示"
+            <img src="/images/702597242f8b4e0d91a797eca31447ec.png" alt="即时互动功能展示"
               class="rounded-card shadow-xl w-full hover-scale">
           </div>
           <div>
