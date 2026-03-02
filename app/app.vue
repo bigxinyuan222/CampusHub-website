@@ -136,7 +136,7 @@
           </div>
           <div class="order-1 md:order-2">
             <div class="relative rounded-card shadow-xl w-full hover-scale">
-              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
@@ -150,7 +150,7 @@
         <div class="feature-card mb-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <div class="relative rounded-card shadow-xl w-full hover-scale">
-              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/未标题-1.png" alt="即时互动功能展示"
@@ -206,7 +206,7 @@
           </div>
           <div class="order-1 md:order-2">
             <div class="video-container w-[80%] h-[650px] mx-auto max-w-md flex items-center justify-center relative">
-              <div class="image-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl" style="font-size: 100px;">
+              <div class="image-placeholder video-placeholder absolute inset-0 flex items-center justify-center text-primary rounded-card shadow-xl">
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
@@ -356,6 +356,30 @@ onUnmounted(() => {
 @import url('//at.alicdn.com/t/c/font_5119551_rn0mdwkntat.css');
 
 /* Hero image styles */
+
+/* Image placeholder styles */
+.image-placeholder :deep(.iconfont) {
+  font-size: 500px !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+
+/* Video placeholder styles */
+.video-placeholder :deep(.iconfont) {
+  font-size: 310px !important;
+  width: 70% !important;
+  height: 70% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 210px !important;
+  max-height: 210px !important;
+}
 .hero-image {
   width: 80%;
   max-width: 24rem;
