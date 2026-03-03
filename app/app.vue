@@ -102,6 +102,7 @@
             </div>
             <h3 class="text-xl font-semibold mb-4">网页端访问</h3>
             <a href="http://192.168.10.9:3029/"
+              target="_blank"
               class="bg-primary text-white px-6 py-2 rounded-lg inline-block hover:bg-primary/90 transition-all-300">
               在线访问 H5 版
             </a>
