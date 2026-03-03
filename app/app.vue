@@ -64,7 +64,9 @@
           <div class="bg-gray rounded-card p-8 text-center hover-scale shadow-lg">
             <div class="w-40 h-40 bg-white rounded-lg p-2 mx-auto mb-4 flex items-center justify-center shadow">
               <div class="w-full h-full bg-gray-200 flex items-center justify-center">
-                <span class="text-sm text-gray-500">小程序二维码</span>
+                <div class="w-24 h-24 flex items-center justify-center">
+                <i class="iconfont iconfont-opening text-primary text-4xl"></i>
+              </div>
               </div>
             </div>
             <h3 class="text-xl font-semibold mb-2">微信小程序</h3>
@@ -77,7 +79,10 @@
             <div class="w-40 h-40 bg-primary/10 rounded-lg p-4 mx-auto mb-4 flex items-center justify-center">
               <i class="fa fa-download text-primary text-6xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-4">App 下载</h3>
+            <h3 class="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+            <div class="w-24 h-24 flex items-center justify-center"><i class="iconfont iconfont-opening text-primary text-4xl"></i>
+            </div>
+            </h3>
             <div class="flex flex-col gap-3 mb-4">
               <a href="#"
                 class="bg-dark text-white px-6 py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-dark/90 transition-all-300">
@@ -96,7 +101,7 @@
               <i class="fa fa-globe text-primary text-6xl"></i>
             </div>
             <h3 class="text-xl font-semibold mb-4">网页端访问</h3>
-            <a href="#"
+            <a href="http://192.168.10.9:3029/"
               class="bg-primary text-white px-6 py-2 rounded-lg inline-block hover:bg-primary/90 transition-all-300">
               在线访问 H5 版
             </a>
@@ -353,13 +358,13 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-@import url('//at.alicdn.com/t/c/font_5119551_rn0mdwkntat.css');
+@import url('//at.alicdn.com/t/c/font_5119551_qzppwueepv.css');
 
 /* Hero image styles */
 
 /* Image placeholder styles */
 .image-placeholder :deep(.iconfont) {
-  font-size: 500px !important;
+  font-size: 400px !important;
   width: 100% !important;
   height: 100% !important;
   display: flex !important;
