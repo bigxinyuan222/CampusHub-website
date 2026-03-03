@@ -102,6 +102,7 @@
             </div>
             <h3 class="text-xl font-semibold mb-4">网页端访问</h3>
             <a href="http://192.168.10.9:3029/"
+              target="_blank"
               class="bg-primary text-white px-6 py-2 rounded-lg inline-block hover:bg-primary/90 transition-all-300">
               在线访问 H5 版
             </a>
@@ -145,8 +146,8 @@
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/34f4c5e793dc45b29446a0e6fb27443a.png" alt="活动集市功能展示"
-                class="w-full"
-                onload="this.previousElementSibling.style.display='none'">
+                class="w-full opacity-0 transition-opacity duration-300"
+                onload="this.previousElementSibling.style.display='none'; this.classList.remove('opacity-0')">
             </div>
           </div>
         </div>
@@ -159,8 +160,8 @@
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <img src="/images/未标题-1.png" alt="即时互动功能展示"
-                class="w-full"
-                onload="this.previousElementSibling.style.display='none'">
+                class="w-full opacity-0 transition-opacity duration-300"
+                onload="this.previousElementSibling.style.display='none'; this.classList.remove('opacity-0')">
             </div>
           </div>
           <div>
@@ -215,9 +216,9 @@
                 <i class="iconfont iconfont-morentupian"></i>
               </div>
               <video src="/video/video_20260302_105512.mp4" alt="个人管家功能展示"
-                class="rounded-card shadow-xl w-[100%] h-[95%] mx-auto my-auto object-contain hover-scale"
+                class="rounded-card shadow-xl w-[100%] h-[95%] mx-auto my-auto object-contain hover-scale opacity-0 transition-opacity duration-300"
                 autoplay loop muted playsinline
-                onloadeddata="this.previousElementSibling.style.display='none'">
+                onloadeddata="this.previousElementSibling.style.display='none'; this.classList.remove('opacity-0')">
               </video>
             </div>
           </div>
